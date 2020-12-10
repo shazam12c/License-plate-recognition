@@ -26,7 +26,7 @@ I1=rgb2gray(I0);
 
 
 %使用Roberts边缘检测算子来做边缘检测，方差为0.08
-I2=edge(I1,'robert',0.08,'both');
+I2=edge(I1,'roberts',0.08,'both');
 %展示Robert算子边缘检测后的图像
 %figure(3),imshow(I2);title('robert算子边缘检测');
 
