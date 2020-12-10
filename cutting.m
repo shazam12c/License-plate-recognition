@@ -26,7 +26,7 @@ g_min=double(min(min(b)));
 %T表示二值化的阈值
 T=round(g_max-(g_max-g_min)/3);
 %将I1的尺寸信息存储到m和n中，m表示行数，n表示列数
-[m.n]=size(b);
+[m,n]=size(b);
 %灰度图像的二值化
 c=(double(b)>=T);
 %显示车牌图像的均值滤波前的二值图像
